@@ -1,0 +1,65 @@
+PatchNote
+
+--> Prompt pra botar no Arduino IDE:
+esp32_index.json.http://dan.drown.org/stm32duino/package_STM32duino_index.json
+
+alterações principais:
+-retirada da conexão wifi (por enquanto)
+-retirada da mudança de cor dos leds (por enquanto)
+-acrecentada a função Bluetooth de conexão
+melhoria do projeto do Controle
+
+Problemas que eu tenho que largar de procrastinar:
+-**NÃO TÁ CONECTANDO NA PORRA DO BLUETOOTH
+-Ledzinho não tá mudando a corzinha pra azul
+por enquanto é só
+
+implementações:
+-Ligar no Desktop e ou mobile (bluetooth)
+-Leds coloridos
+-Botões:
+	°Ligar o ESP
+	°Adicionar/Retirar pontos
+	°enviar dados
+	°Faltas
+-Wifi (talvez)
+
+OBS: Wifi só pra caso conecte diretamente com o banco de dados;
+controle deve ser preferencialmente branco e retangular;
+Gostaria de som no controle ou algum led pra cada ação (uns 4) para indicar cada ação realizada;
+
+
+Links referencias q eu usei pra fazer o código:
+-https://forum.arduino.cc/t/connecting-bluetooth-device-to-esp32/1232540
+-https://www.espressif.com/sites/default/files/documentation/esp32_bluetooth_networking_user_guide_en.pdf
+-https://youtu.be/EWxM8Ixnrqo?feature=shared
+-https://youtu.be/0Q_4q1zU6Zc?feature=shared
+-https://youtu.be/sqeWirjQB9U?feature=shared
+
+Base: Skeetch do proprio IDE do arduino
+teve mais uns 8 ou 9 mas foi de uns Arabe esquisito ou de americano mt mt chato q eu n entendi metade do ingles
+
+---///---\\\---
+Patch do Projeto Controle 3D:
+https://www.tinkercad.com/things/0HhXErMwx7g-super-waasa/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=W3FGdZv5pN9MwikPbFOmzbmnlQzHS-WAl4WiEpp_4-c
+
+-Cores da CBK
+-Entrada para carregador (Parte inferior)
+-Acrilico para visão dos leds (parte superior)
+-medidas: Comprimento: 14 centimetros; Largura: 6 centimetros; Altura: 4 centimetros;
+-composição: Principalmente fdm
+
+Case composta por 2 partes (superficie do controle e tampa traseira pra encaixar)
+-bateria de 400mAh de 3.7V (mais ou menos 3 horas e 15 minutos de vida útil)
+
+cores e botões do Controle:
+-vermelho pequeno em cima: Liga/Desliga o controle;
+-Azul Grande no centro: Enviar dados ao servidor ou aplicativo;
+-Verde e vermelho pequenos: Adicionar e retirar (consecutivamente) pontos de um participante;
+-Amarelo grande inferior: Falta;
+-Preto grande inferior: Expulsão;
+-Superior frontal: Acrilico para os leds
+-inferior: entrada para carregador (provavelmente tipo C de 2.5V)
+
+**talvez!!
+-Pulseira de segurança como Wii Sports
